@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Page</title>
+    <!-- رابط Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- رابط Font Awesome للأيقونة -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+        }
+        .card {
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .card-header {
+            background-color: white; /* اللون الرمادي */
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+        .assignment-icon {
+            font-size: 50px;
+            color: #f7b500; /* اللون الأصفر */
+            margin-right: 15px; /* المسافة بين الأيقونة والنص */
+        }
+        .card-header i {
+            margin-right: 10px;
+        }
+        .btn-custom {
+            width: 120px;
+        }
+        .question-container {
+            padding: 20px;
+            background-color: white;
+        }
+        .question-container h5 {
+            margin-bottom: 30px;
+        }
+        .btn-back, .btn-next {
+            font-size: 18px;
+        }
+        .card-footer {
+            background-color: white;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-file-alt assignment-icon"></i> <!-- تم إضافة الفئة هنا -->
+                        <div>
+                            <h3>Assignment-introduction</h3>
+                            <p>Assignment 1 of 10</p>
+                        </div>
+                    </div>
+                    <div class="card-body question-container">
+                        <h5>Q1. What is Figma primarily used for?</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="answer" id="optionA">
+                            <label class="form-check-label" for="optionA">
+                                A. Video editing
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="answer" id="optionB">
+                            <label class="form-check-label" for="optionB">
+                                B. Graphic design
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="answer" id="optionC">
+                            <label class="form-check-label" for="optionC">
+                                C. Web and UI/UX design
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="answer" id="optionD">
+                            <label class="form-check-label" for="optionD">
+                                D. Music production
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="course-detail-min.html" class="btn btn-danger btn-custom btn-back">Back</a>
+                        <a href="course-detail-min.html" class="btn btn-warning btn-custom btn-next">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- رابط Bootstrap JS و jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
